@@ -5,7 +5,7 @@
   <% for contact in contacts%>
   <li> <%= contact["first_name"]  %> <%= contact["last_name"]  %>
   <% company = Company.find_by({"id" => contact["company_id"]})%>
-    
+    @ <%= company["name"]%>
   </li>
   
   <% end %>
