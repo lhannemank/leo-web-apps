@@ -1,0 +1,61 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Taco Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .taco {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .taco img {
+            width: 100%;
+            height: auto;
+        }
+        .taco h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="taco">
+        <img src="https://www.atablefullofjoy.com/wp-content/uploads/2018/09/Carnitas-Tacos-Recipe-featured-9.jpg" alt="Carnitas Taco">
+        <h2>Carnitas</h2>
+        <p>Click to select</p>
+    </div>
+    <div class="taco">
+        <img src="https://www.eatingwell.com/thmb/8Iz-K99O5ArJdilBYbCrN2A-dyk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7921583-408ce587ca8741b2b4ae92420817fb2f.jpg" alt="Asada Taco">
+        <h2>Asada</h2>
+        <p>Click to select</p>
+    </div>
+    <div class="taco">
+        <img src="https://embed.widencdn.net/img/beef/gcuz19twra/1120x840px/beef-steak-soft-tacos-horizontal.tif?keep=c&u=7fueml" alt="Steak Taco">
+        <h2>Steak</h2>
+        <p>Click to select</p>
+    </div>
+</body>
+</html>
+
+
+Class code -->
+<% fillings = ["Carnitas","Al Pastor","Pescado","Mushroom"]%>
+
+<p> We have <%= fillings.count %> tacos </p>
+
+<ul>
+  <% for filling in fillings %>
+    <li> <%=filling%> </li>
+  <% end %>
+</ul>

@@ -1,0 +1,18 @@
+<h1>Dice</h1>
+
+<% 
+
+rand(1..6) %>
+
+<% diceroll1 = rand(1..6)%>
+<% diceroll2 = rand(1..6)%>
+
+<p> 
+Roll 1: <img src="/images/dice/<%= diceroll1 %>.svg" alt="<%= diceroll1 %>"> </p>
+<p> Roll 2: <img src="/images/dice/<%= diceroll2 %>.svg" alt="<%= diceroll2 %>"> </p>
+<p> Dice total: <%= diceroll1 + diceroll2 %>  </p>
+
+<p>
+  <a href="/dice">Roll again</a> 
+</p>
+
